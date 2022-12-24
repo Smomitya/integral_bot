@@ -1,8 +1,7 @@
 # Telegram бот для оттачивания навыков взятия интегралов.
 Для использования нужно запустить контейнер docker. Я всё настраивал на локальном сервере и использовал сервис ngrok для подключения к внешней сети.
 Cначала нужно сконфигурировать ngrok:
-```$ ngrok config add-authtoken {ngrok_token}
-```
+```$ ngrok config add-authtoken {ngrok_token}```
 Перед запуском самого приложения пробрасываем порты:
 ```$ ngrok http 5000
 $ curl --location --request POST 'https://api.telegram.org/bot{tg_bot_token}/setWebhook' \
